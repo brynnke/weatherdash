@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <head class="container-fluid text-center text-gray text-darkblue bg-dark p-2">
+        <h1> WEATHER DASHBOARD</h1>
+    </head>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-dark">
+                <h5 class="mt-1"> SEARCH THE CITY WEATHER:</h5>
+                <div class="input-group mb-3">
+                    <input type="text" id="invade-city" class="form-control" placeholder="Enter the city here" aria-label="Type a city">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="inquire-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-primary-mb-3" type="button" id="erase-history">DELETE HISTORY</button>
+                <form id="history"></form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
