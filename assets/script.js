@@ -19,7 +19,7 @@
 
     // weather function / weather request 
     function getWeather(namecityEl){
-        let query URL = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}" + namecityEl + "&appid=" + APIKey;
+        let query URL = "https://api.openweathermap.org/geo/1.0/direct?q=seattle&appid=d91f911bcf2c0f925fb6535547a5ddc9" + namecityEl + "&appid=" + APIKey;
         axios.get(queryURL)
         .then(function(respon){
             // today weather 
@@ -39,7 +39,8 @@
             currentHumidityEl.innerHTML = "Humidity:" + response.data.main.humidity + "%";
             currentWindEl.innerHTML = "Wind Speed:" + response.data.wind.speed + "MPH";
 
-            
+
         })
     }
 
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
